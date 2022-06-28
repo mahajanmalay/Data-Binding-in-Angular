@@ -1,0 +1,17 @@
+<!-- one way data binding -->
+
+<h1>Inside app component</h1>
+<h1>Data from Ts to HTML : {{str}}</h1>
+
+<input #Mydata type="text">
+<button (click)="Send(Mydata.value)">Send Data</button>
+
+<h1>Data entered in text area is : {{value}}</h1>
+
+<!-- two way data binding -->
+
+<h1>-----------------------------------------------------------------</h1>
+
+<h1>Enter your name : </h1>
+<input [(ngModel)]="Name" type="text">
+<h1>Your name is : {{Name}}</h1>
